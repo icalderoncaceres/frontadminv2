@@ -15,7 +15,7 @@ class PrivateRouteContainer extends React.Component {
     return (<Route {...props} render={props => isAuthenticated
         ? <Component {...props}/>
         : (<Redirect to={{
-            pathname: '/login',
+            pathname: '/',
             state: {
               from: props.location
             }
